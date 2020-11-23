@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="30dp">
+
+     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/pu" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="24dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="24dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role: "
+        android:textSize="24dp"
+        android:layout_marginTop="10dp" />
+    <RadioGroup
+        android:id="@+id/role"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textSize="24dp"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher"
+            android:textSize="24dp"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:textSize="30dp"
+        android:maxEms="10"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/lreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User?Register"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:maxEms="10"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>
