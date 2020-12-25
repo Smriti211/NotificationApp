@@ -54,7 +54,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         epassword = (EditText)findViewById(R.id.password1);
         progessbar = (ProgressBar)findViewById(R.id.ProgressBar1);
         role = (RadioGroup)findViewById(R.id.role1);
-
     }
 
     @Override
